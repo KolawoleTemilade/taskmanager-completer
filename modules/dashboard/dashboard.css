@@ -1,0 +1,57 @@
+#side_bar{
+    width: 50%;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user_profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.user_avatar{
+    /* border: 2px solid; */
+    width: 10vw;
+    height: 10vh;
+    border-radius: 50%;
+    background: rgba(41, 41, 240, 0.828);
+
+}
+.user_details{
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    height: 80vh;
+    /* border: 2px solid green; */
+   
+    
+}
+nav ul {
+/* border: 2px solid red; */
+display: flex;
+flex-direction: column;
+gap: 10px;
+width: 60%;
+}
+nav ul li{
+    /* border: 2px solid ; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+nav ul :hover{
+background: rgba(192, 215, 237, 0.183);
+}
+nav ul :active{
+    background: rgba(104, 142, 255, 0.452);
+    color: rgba(0, 0, 255, 0.644);
+}
+nav ul li img{
+    width: 20px;
+    height: 20px;
+}

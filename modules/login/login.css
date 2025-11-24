@@ -1,0 +1,148 @@
+
+.signup_container { display: none; }
+.signup_title_div{
+display: none;
+}
+
+.auth_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+  } 
+  
+  .login_container,
+.signup_container {
+  width: 400px;
+  background: #fff;
+  border-radius: 15px;
+  display: none; 
+}
+
+.login_container {
+  display: block; 
+}
+
+.login_title,
+.signup_title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 5px;
+  color: #1e1e1e;
+}
+
+.login_subtitle,
+.signup_subtitle {
+  text-align: center;
+  color: #888;
+  margin-bottom: 25px;
+}
+.input_group {
+    width: 100%;
+    position: relative;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .input_group p{
+    text-transform: capitalize;
+    font-size: 16px;
+  }
+.input_section {
+
+  position: relative;
+
+}
+  .input_section img {
+    width: 20px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.6;
+  }
+  
+  .input_section input {
+    width: 100%;
+    padding: 14px 15px 14px 45px; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  
+  .input_group input:focus {
+    border-color: #3b82f6;
+    outline: none;
+  }
+
+  .btn {
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .primary_btn {
+    background: #EDAD00;;
+   
+  }
+  .primary_btn :hover {
+    background: #D78F00;
+  }
+ 
+  .help_btn {
+    background: #f2f2f2;
+    gap: 8px;
+  }
+  .btn_sec {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .switch_btn {
+
+    background: #ddd;
+    width: 50%;
+    border-radius: 8px;
+    /* border: none; */
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: flex; 
+    justify-content: space-between;  
+    align-items: center;
+   
+}
+.switch_btn .active-tab { 
+  border-bottom: 4px solid blue; 
+}
+
+  .switch_btn p {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid;
+}
+
+  .footer_note {
+    text-align: center;
+    color: #777;
+    margin-top: 25px;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+  
+  .footer_note .link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
