@@ -1,17 +1,11 @@
 .box_div{
-    /* min-height: 15vh;
- 
-    /* margin: 0 auto; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */ 
-       width: 50vw;
+       width: 35vw;
 }
 .logo_container{
     border-radius: 15px;
     background-color: #2E56FB;
     width: 16%;
-    height: 20%;
+    height: 16%;
     padding: 18px;
    /* margin: 0 auto; */
    display: flex;
