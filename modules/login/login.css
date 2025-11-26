@@ -1,145 +1,114 @@
-
-.signup_container { display: none; }
-.signup_title_div{
-display: none;
-}
-
-.auth_wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-  } 
-  
-  .login_container,
-.signup_container {
-  width: 400px;
-  background: #fff;
-  border-radius: 15px;
-  display: none; 
-}
-
-.login_container {
-  display: block; 
-}
-
-.login_title,
-.signup_title {
-  text-align: center;
-  font-size: 26px;
-  margin-bottom: 5px;
-  color: #1e1e1e;
-}
-
-.login_subtitle,
-.signup_subtitle {
-  text-align: center;
-  color: #888;
-  margin-bottom: 25px;
-}
-.input_group {
-    width: 100%;
-    position: relative;
-    margin-bottom: 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .input_group p{
-    text-transform: capitalize;
-    font-size: 16px;
-  }
-.input_section {
-
-  position: relative;
-
-}
-  .input_section img {
-    width: 20px;
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.6;
+   .auth-wrapper {
+    max-width: 400px;
+    margin: auto;
   }
   
-  .input_section input {
-    width: 100%;
-    padding: 14px 15px 14px 45px; 
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    font-size: 15px;
-  }
-  
-  .input_group input:focus {
-    border-color: #3b82f6;
-    outline: none;
-  }
-
-  .btn {
-    padding: 12px 18px;
-    border-radius: 10px;
-    border: none;
-    font-weight: 600;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 10px;
+  .switch-btn {
     display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .primary_btn {
-    background: #EDAD00;;
-   
-  }
-  .primary_btn :hover {
-    background: #D78F00;
-  }
- 
-  .help_btn {
-    background: #f2f2f2;
-    gap: 8px;
-  }
-  .btn_sec {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    margin-top: 10px;
-  }
-
-  .switch_btn {
-    
-    background: #ddd;
-    border-radius: 8px;
-    border: 5px solid;
-    font-weight: 600;
-    cursor: pointer;
+    background: #F3F4F6;
     margin-bottom: 20px;
-    display: flex;   
-    align-items: center;
-   
-}
-.switch_btn .active-tab { 
-  border-bottom: 4px solid blue; 
-}
-
-  .switch_btn p {
-    padding: 10px;
-    text-align: center;
-    border: 2px solid;
-}
-
-  .footer_note {
-    text-align: center;
-    color: #777;
-    margin-top: 25px;
-    font-size: 13px;
-    line-height: 1.4;
+    padding: 5px;
+    border-radius: 8px;
   }
   
-  .footer_note .link {
-    color: #007bff;
-    text-decoration: none;
+  .switch-btn button {
+    flex: 1;
+    padding: 6px;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .switch-btn button.active {
+    background: #FFFFFF;
+    color: #000;
+  }
+  
+  .page-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-section {
+    display: none;
+  }
+  
+  .form-section.active {
+    display: block;
+    animation: fade 0.3s ease;
+  }
+  
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .input-section {
+    margin-bottom: 20px;
+    /* display: flex;
+    gap: 30px; */
+  }
+  
+  .input-field {
+    display: flex;
+    align-items: center;
+    background: #f3f3f3;
+    padding: 12px;
+    border-radius: 8px;
+  }
+  .input-field input{
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 100%;
+  }
+  
+  .input-field img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  .error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    width: 100%;
+         
+  }
+  
+  
+.btn-div{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px;
+  
+}
+.btn-div button{
+    padding: 8px;
+    width: 50%;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.help-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+  
+  .primary-btn {
+    background: #EAA800;
+    color: #000;
+  }
+  
+  .footer-note {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
   }
   
