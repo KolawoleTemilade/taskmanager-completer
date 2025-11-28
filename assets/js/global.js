@@ -2,23 +2,16 @@
 function loadComponentScripts(element) {
     const scripts = element.querySelectorAll("script");
     for (let script of scripts) {
-      // Create a new script element that the browser will execute
       const newScript = document.createElement("script");
   
-      // Copy the source path for external scripts
       if (script.src) {
         newScript.src = script.src;
       }
-      // Copy the content for inline scripts
       if (script.textContent) {
         newScript.textContent = script.textContent;
       }
-  
-      // Remove the original (non-functional) script tag
+
       script.remove();
-  
-      // Append the new, executable script to the element
-      // This is what triggers the browser to run the code
       element.appendChild(newScript);
     }
   }

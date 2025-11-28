@@ -107,7 +107,10 @@ loginForm.addEventListener("submit", function (e) {
 
   if (savedUser.email === email.value && savedUser.password === password.value) {
     alert("Login successful! Redirecting...");
-    window.location.href = "dashboard.html";
+
+    setTimeout(() => {
+        window.location.href = "/home.html";
+      }, 1500);
   } else {
     showError(password, "Incorrect email or password");
   }
