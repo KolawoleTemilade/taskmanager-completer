@@ -13,15 +13,21 @@ if (!window.sidebarScriptLoaded) {
 
   navItems.forEach(item => {
     item.addEventListener('click', () => {
-      const pageId = item.getAttribute('data-page');
-      console.log("clicked!");
 
-      // Remove all active classes
+      const pageId = item.getAttribute('data-page');
+      console.log("clicked:", pageId);
+
+      // Remove all active pages
       pages.forEach(page => page.classList.remove('active'));
 
-      // Activate selected page
+      // Show selected page
       const target = document.getElementById(pageId);
-      if (target) target.classList.add('active');
+      if (target) {
+        target.classList.add('active');
+      } else {
+        console.error("No page with ID:", pageId);
+      }
+
     });
   });
 }

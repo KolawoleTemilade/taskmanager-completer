@@ -49,19 +49,53 @@ template.innerHTML = `
   </div>
 </div>
 `;
+const quickActions = [
+  {
+    icon: "/assets/images/icon/task.svg",
+    title: "create new task",
+    subtext: "add a task to your list",
+  },
+  {
+    icon: "/assets/images/icon/expenses.svg",
+    title: "track expense",
+    subtext: "record a new expense",
+  },
+  {
+    icon: "/assets/images/icon/note.svg",
+    title: "write a note",
+    subtext: "capture your thought",
+  },
+]
 
 class DetailsCard extends HTMLElement {
-    constructor() {
-        super();
+  constructor() {
+    super();
 
-        this.attachShadow({ mode: "open" });
-        this.shadowRoot.appendChild(template.content.cloneNode(true));
+    this.attachShadow({ mode: "open" });
+    this.shadowRoot.appendChild(template.content.cloneNode(true));
 
-        this.shadowRoot.querySelector("h3").innerText = this.getAttribute("name");
-        this.shadowRoot.querySelector("img").src = this.getAttribute("icons");
-        this.shadowRoot.querySelector("h2").innerText = this.getAttribute("figure");
-        this.shadowRoot.querySelector("p").innerText = this.getAttribute("progressStatus");
-    }
+    this.shadowRoot.querySelector("h3").innerText = this.getAttribute("name");
+    this.shadowRoot.querySelector("img").src = this.getAttribute("icons");
+    this.shadowRoot.querySelector("h2").innerText = this.getAttribute("figure");
+    this.shadowRoot.querySelector("p").innerText = this.getAttribute("progressStatus");
+  }
 }
 
 window.customElements.define("dashboard-cards", DetailsCard);
+
+const container = document.getElementById("quickActionsContainer");
+
+quickActions.forEach(action => {
+  container.innerHTML += `
+    <div class="action-card">
+    <div class= "card-img">
+    <img src="${action.icon}" />
+    </div>
+    <div class ="card-text ">
+      <h3>${action.title} <span><p>${action.subtext}</p></span></h3>
+      
+    </div>
+  
+    </div>
+  `;
+});

@@ -71,3 +71,86 @@ nav ul li img{
     display: block;
     width: 100%;
   }
+
+  /* dashboard cards for second layer of dashboard */
+  .dashboard_cards2{
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    margin-top: 10%; /*remeber to remove this mt because there is a general gap between the header, the first dashboard card and this here, do you get?
+    /* height: 10vh; */
+  }
+  .recent_task, .quick_actions{
+    width: 50%;
+    border: 2px solid;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  .title_div{
+    display: flex;
+    gap: 5px;
+    align-items: start;
+  }
+  .titles{
+    display: flex;
+    align-items: center;
+  }
+  .empty_recenttask_state{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top:70px;
+  }
+  .empty_state_content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* using chatgpt styling */
+  .quick_actions {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+  
+  .action-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #fff;
+    padding: 5px 20px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+  }
+  .card-img{
+    background:blue;
+    display:flex;
+    align-items:center;
+    justify-content:center;}
+  
+  .card-img img {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 12px;
+  }
+  .card-text{
+    display: flex;
+    flex-direction: column;
+  }
+  .card-text h3 {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #333;
+  }
+  
+  .card-text p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .action-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  }
+  

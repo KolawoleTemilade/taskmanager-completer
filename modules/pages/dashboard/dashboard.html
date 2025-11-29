@@ -1,33 +1,74 @@
-<main id="dashboard">
-    <div class="dashboard_cards">
-      <!-- creating a custom element with js -->
-      <dashboard-cards
-        name=" active tasks"
-        icons="/assets/images/icon/checkbox.svg"
-        figure="0"
-        progressStatus="0 completed"
-      >
-      </dashboard-cards>
-      <dashboard-cards
-        name=" active tasks"
-        icons="/assets/images/icon/checkbox.svg"
-        figure="0"
-        progressStatus="0 completed"
-      >
-      </dashboard-cards>
-      <dashboard-cards
-        name=" active tasks"
-        icons="/assets/images/icon/checkbox.svg"
-        figure="0"
-        progressStatus="0 completed"
-      >
-      </dashboard-cards>
-      <dashboard-cards
-        name=" active tasks"
-        icons="/assets/images/icon/checkbox.svg"
-        figure="0"
-        progressStatus="0 completed"
-      >
-      </dashboard-cards>
+<link rel="stylesheet" href="dashboard.css" />
+<section id="dashboard">
+  <div class="dashboard_cards">
+    <!-- creating a custom element with js -->
+    <dashboard-cards
+      name=" active tasks"
+      icons="/assets/images/icon/checkbox.svg"
+      figure="0"
+      progressStatus="0 completed"
+    >
+    </dashboard-cards>
+    <dashboard-cards
+      name=" active tasks"
+      icons="/assets/images/icon/checkbox.svg"
+      figure="0"
+      progressStatus="0 completed"
+    >
+    </dashboard-cards>
+    <dashboard-cards
+      name=" active tasks"
+      icons="/assets/images/icon/checkbox.svg"
+      figure="0"
+      progressStatus="0 completed"
+    >
+    </dashboard-cards>
+    <dashboard-cards
+      name=" active tasks"
+      icons="/assets/images/icon/checkbox.svg"
+      figure="0"
+      progressStatus="0 completed"
+    >
+    </dashboard-cards>
+  </div>
+  <!-- recent tasks and quick actions section -->
+  <section class="dashboard_cards2">
+    <!-- recent task -->
+    <div class="recent_task">
+      <div class="inside_container">
+        <div class="title_div">
+          <div class="titles">
+            <img
+              src="/assets/images/icon/arrowleft.svg"
+              width="20"
+              alt="recent-time icon"
+            />
+            <p>recent task</p>
+          </div>
+        </div>
+        <div class="empty_recenttask_state">
+          <div class="empty_state_content">
+            <img src="/assets/images/icon/task.svg" alt="" />
+            <p>no task yet</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </main>
+    <!-- quick actions -->
+    <div id="quickActionsContainer" class="quick_actions">
+      <div class="inside_container">
+        <div class="title_div">
+          <div class="titles">
+            <img
+              src="/assets/images/icon/arrowleft.svg"
+              width="20"
+              alt="recent-time icon"
+            />
+            <p>quick actions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+<script src="./dashboard.js"></script>

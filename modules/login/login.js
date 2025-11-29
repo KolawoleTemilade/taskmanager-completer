@@ -143,3 +143,10 @@ function showError(input, message) {
   }
   
 
+  console.log({
+    loginTab,
+    signupTab,
+    loginForm,
+    signupForm
+  });
+  
