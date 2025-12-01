@@ -1,0 +1,65 @@
+.task-page{
+    width: 100%;
+    margin: 0 auto;
+}
+.switch-btn {
+    display: flex;
+    background: #F3F4F6;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  
+  .switch-btn button {
+    flex: 1;
+    padding: 6px;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .switch-btn button.active {
+    background: #FFFFFF;
+    color: #000;
+  }
+  .analytic-section, .summary-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .analytics{
+    display: flex;
+    gap: 8px;
+  }
+  .one-figure, .second-figure{
+    display: flex;
+    flex-direction: column;
+  }
+  .one-figure p, .second-figure p{
+    
+  }
+
+  .demarcate-line{
+    border: 1px solid;
+    height: 55px;
+  }
+
+  .circle{
+    border: 3px solid rgba(54, 104, 181, 0.824);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /* padding: 50px; */
+  }
+  .task-field, .summary-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: dashed;
+    border-color: rgba(63, 63, 234, 0.345);
+    padding: 25px;
+    width: 100%;
+  }
