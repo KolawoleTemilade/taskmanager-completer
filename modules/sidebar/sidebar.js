@@ -31,3 +31,43 @@ if (!window.sidebarScriptLoaded) {
     });
   });
 }
+
+
+// const navItems = document.querySelectorAll("#sidebar [data-page]");
+// const pages = document.querySelectorAll(".page");
+
+// navItems.forEach(item => {
+//     item.addEventListener("click", () => {
+//         const pageId = item.dataset.page;
+
+//         // Hide all pages
+//         pages.forEach(p => p.classList.remove("active"));
+
+//         // Show selected page
+//         document.getElementById(pageId).classList.add("active");
+
+//         // Load content if needed
+//         loadPageContent(pageId);
+//     });
+// });
+// function loadPageContent(pageId) {
+//     const page = document.getElementById(pageId);
+//     const importPath = page.dataset.import;
+
+//     // If no import path, do nothing
+//     if (!importPath) return;
+
+//     // Prevent reloading the same page twice
+//     if (page.dataset.loaded === "true") return;
+
+//     fetch(importPath)
+//         .then(res => res.text())
+//         .then(html => {
+//             page.innerHTML = html;
+//             page.dataset.loaded = "true";
+//         })
+//         .catch(err => {
+//             page.innerHTML = "<p>Failed to load page.</p>";
+//             console.error("Page import error:", err);
+//         });
+// }

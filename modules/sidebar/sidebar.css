@@ -27,11 +27,9 @@ nav{
     
 }
 nav ul {
-/* border: 2px solid red; */
 display: flex;
 flex-direction: column;
 gap: 10px;
-width: 60%;
 }
 nav ul li{
     /* border: 2px solid ; */

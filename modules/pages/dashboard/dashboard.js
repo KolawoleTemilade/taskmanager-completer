@@ -4,15 +4,15 @@ template.innerHTML = `
 .dashboard-cards{ 
   border:1px solid ;
   border-radius:10px;
-  width:80%;
+  display:flex; 
+  width:100%; 
 }
 .card-content{
   display:flex;
   justify-content:space-around;
   flex-direction:column;
   padding:20px;
-  gap:20px;
-
+  width:100%;
 }
 .card-title{
   display:flex;
@@ -33,7 +33,6 @@ template.innerHTML = `
 
 <div class="dashboard-cards">
   <div class="card-content">
-
     <div class="card-title">
       <h3></h3>
       <div class="card-img">
@@ -45,7 +44,6 @@ template.innerHTML = `
       <h2></h2>
       <p></p>
     </div>
-
   </div>
 </div>
 `;

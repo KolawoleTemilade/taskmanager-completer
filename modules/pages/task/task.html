@@ -1,65 +1,82 @@
-<link rel="stylesheet" href="task.css">
-<section class="task-page">
-  <!-- Switch Buttons -->
-  <div class="switch-btn">
-    <button id="myTaskTab" class="active">
-      <img src="/assets/images/icon/dashboad.svg" alt="" />my task
+<!-- <link rel="stylesheet" href="task.css"> -->
+
+<section class="task-page" id="taskspage">
+  <!-- SWITCH BUTTONS -->
+  <div class="switch-btns">
+    <button id="myTaskBtn" class="active">
+      <img src="/assets/images/icon/checktask.svg" alt="check-img" />
+      My Task
     </button>
-    <button id="aiSummary">
-      <img src="/assets/images/icon/email.svg" alt="" />ai summary
+
+    <button id="aiSummaryBtn">
+      <img src="/assets/images/icon/summary.svg" alt="summary-img" />
+      AI Summary
     </button>
-  </div>
-<div class="my-task">
-  <div class="analytic-section">
-    <div class="analytics">
-      <div class="one-figure">
-        <h4>0</h4>
-        <p>acive task</p>
-      </div>
-      <div class="demarcate-line"></div>
-      <div class="second-figure">
-        <h4>
-            0
-        </h4>
-        <p>completed task</p>
-      </div>
-    </div>
-    <button><img src="/assets/images/icon/note.svg" alt="" /> add task</button>
   </div>
 
-  <div class="task-field">
-    <div class="circle">
+  <!-- MY TASK PANEL -->
+  <div class="my-task" id="taskTab">
+    <div class="analytic-section">
+      <div class="analytics">
+        <div class="figures">
+          <h4 class="active">0</h4>
+          <p>active tasks</p>
+        </div>
 
+        <div class="demarcate-line"></div>
+
+        <div class="figures">
+          <h4 class="completed">0</h4>
+          <p>completed</p>
+        </div>
+      </div>
+
+      <button class="cto-btn">
+        <img src="/assets/images/icon/addtask.svg" alt="" />
+        Add Task
+      </button>
     </div>
-    <p>no tasks yet</p>
-    <p> click "Add Task" to create your first task</p>
+
+    <div class="task-field">
+      <div class="circle"></div>
+      <p>No tasks yet</p>
+      <p>Click "Add Task" to create your first task</p>
+    </div>
   </div>
-</div>
-<div class="ai-summary">
+
+  <!-- AI SUMMARY PANEL -->
+  <div class="ai-summary" id="summaryTab">
     <div class="summary-title">
-        <div>
-            <h3>
-                AI-Powered task summary
-            </h3>
-            <p>get insights and recommendations for your tasks</p>
-        </div>
-        <button>generate new</button>
-    </div>
-    <div class="switch-btn">
-        <button id="myTaskTab" class="active">
-          <img src="/assets/images/icon/dashboad.svg" alt="" />latest summary
-        </button>
-        <button id="aiSummary">
-          <img src="/assets/images/icon/email.svg" alt="" />history (0)
-        </button>
-      </div>
-      <div class="summary-field">
-        <div class="circle">
-    
-        </div>
-        <p>no summary history</p>
-        <p>Generate summaries to build up your history</p>
+      <div>
+        <h3>AI-Powered Task Summary</h3>
+        <p>Get insights and recommendations for your tasks</p>
       </div>
 
-</div>
+      <button class="cto-btn">
+        <img src="/assets/images/icon/generate.svg" alt="" />
+        Generate New
+      </button>
+    </div>
+
+    <!-- INNER SWITCH (Latest vs History) -->
+    <div class="switch-btn inner-switch">
+      <button id="latestSummaryBtn" class="active">
+        <img src="/assets/images/icon/generate.svg" alt="" /> Latest Summary
+      </button>
+
+      <button id="historySummaryBtn">
+        <img src="/assets/images/icon/history.svg" alt="" /> History (0)
+      </button>
+    </div>
+
+    <div class="summary-field">
+      <div class="circles">
+        <img src="/assets/images/icon/summary.svg" alt="" />
+      </div>
+      <p>No summary history</p>
+      <p>Generate summaries to build history</p>
+    </div>
+  </div>
 </section>
+
+<!-- <script src="task.js"></script> -->

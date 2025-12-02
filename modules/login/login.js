@@ -133,20 +133,9 @@ function showError(input, message) {
   
     parent.classList.add("input-error");
     error.textContent = message;
-  }
-  
-  
-
+  }  
   function clearErrors() {
     document.querySelectorAll(".error").forEach(err => err.innerHTML = "");
     document.querySelectorAll(".input-error").forEach(div => div.classList.remove("input-error"));
   }
-  
-
-  console.log({
-    loginTab,
-    signupTab,
-    loginForm,
-    signupForm
-  });
   
