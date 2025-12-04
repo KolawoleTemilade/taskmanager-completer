@@ -1,6 +1,39 @@
+
+
 .task-page{
     width: 70%;
     margin: 0 auto;
+    border: 1px solid #cecfd1;
+    padding: 10px;
+}
+
+header {
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+  gap: 10px;
+  border: 1px solid #cecfd1;
+}
+.logo {
+  border-radius: 15px;
+  background-color: #2e56fb;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+.title h4{
+    text-transform: capitalize;
+    font-size: 20px;
 }
 .switch-btn {
     display: flex;
@@ -8,7 +41,7 @@
     margin-bottom: 20px;
     padding: 5px;
     border-radius: 8px;
-    
+    margin-top: 5%;
   }
   
   .switch-btn button {
@@ -80,7 +113,7 @@
     border-style: dashed;
     border-color: rgba(63, 63, 234, 0.345);
     padding: 25px;
-    width: 100%;
+    /* width: 100%; */
   }
 .cto-btn {
     padding: 6px;
