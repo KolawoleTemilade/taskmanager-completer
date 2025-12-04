@@ -101,9 +101,9 @@
      grid-template-columns: repeat(1, 1fr);
     }
   }
-  .dashboard_cards2{
+  /* .dashboard_cards2{
     flex-direction: column;
     width: 100%;
-  }
+  } */
   .recent_task, .quick_actions{
     width: 100%;}

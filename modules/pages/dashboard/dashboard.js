@@ -19,8 +19,10 @@ template.innerHTML = `
   justify-content:space-between;
   align-items:center;
 }
+  .card-title h3{
+  text-transform:capitalize;
+  }
 .card-img{
-   border:1px solid;
    border-radius:9px;
   display:flex;
   align-items:center;
