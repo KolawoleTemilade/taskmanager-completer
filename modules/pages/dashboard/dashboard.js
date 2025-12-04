@@ -86,7 +86,7 @@ class DetailsCard extends HTMLElement {
 
     this.shadowRoot.querySelector("h3").innerText = this.getAttribute("name");
     this.shadowRoot.querySelector("img").src = this.getAttribute("icons");
-    this.shadowRoot.querySelector("card-img").style.backgroundColor = this.getAttribute("background-color");
+    this.shadowRoot.querySelector(".card-img").style.backgroundColor = this.getAttribute("background-color");
     this.shadowRoot.querySelector("h2").innerText = this.getAttribute("figure");
     this.shadowRoot.querySelector("p").innerText = this.getAttribute("progressStatus");
   }
