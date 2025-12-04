@@ -22,8 +22,12 @@
   }
   .title_div{
     display: flex;
-    gap: 5px;
-    align-items: start;
+    gap: 10px;
+    align-items: center;
+    justify-self: start;
+  }
+  .title_div p{
+    text-transform: capitalize;
   }
   .titles{
     display: flex;
@@ -33,7 +37,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   
+   height: 45vh;
   }
   .empty_state_content{
     display: flex;
@@ -52,21 +56,27 @@
     align-items: center;
     gap: 25px;
     background: #fff;
-    padding: 0px 15px;
-    border-radius: 14px;
+    padding: 0px 10px;
+    border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     cursor: pointer;
   }
+  .action-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    background:#06B6D4 ;
+  }
   .card-img{
-    background:blue;
     display:flex;
     align-items:center;
-    justify-content:center;}
+    justify-content:center;
+    padding: 8px;
+    border-radius: 8px;
+  }
   
   .card-img img {
-    width: 28px;
-    height: 28px;
-    margin-bottom: 12px;
+    width: 20px;
+    height: 20px;
+  
   }
   .card-text{
     display: flex;
@@ -83,7 +93,17 @@
     color: #666;
   }
   
-  .action-card:hover {
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-  }
+ 
   
+
+  @media (max-width:768) {
+    .dashboard_cards {
+     grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .dashboard_cards2{
+    flex-direction: column;
+    width: 100%;
+  }
+  .recent_task, .quick_actions{
+    width: 100%;}

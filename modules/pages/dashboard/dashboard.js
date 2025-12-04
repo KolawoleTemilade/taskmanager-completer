@@ -20,11 +20,17 @@ template.innerHTML = `
   align-items:center;
 }
 .card-img{
-  background:blue;
+   border:1px solid;
+   border-radius:9px;
   display:flex;
   align-items:center;
   justify-content:center;
+  padding:5px;
 }
+  .card-img img{
+  width:20px;
+  height:20px;
+  }
 .card-details{
   display:flex;
   flex-direction:column;
@@ -50,16 +56,22 @@ template.innerHTML = `
 const quickActions = [
   {
     icon: "/assets/images/icon/task.svg",
+    backgroundColor: "#DBEAFE",
+    color:"#155DFC",
     title: "create new task",
     subtext: "add a task to your list",
   },
   {
     icon: "/assets/images/icon/expenses.svg",
+    backgroundColor: "#CEFAFE",
+    color:"#22A4C4",
     title: "track expense",
     subtext: "record a new expense",
   },
   {
     icon: "/assets/images/icon/note.svg",
+    backgroundColor: "#DBFCE7",
+    color:"#00A63E",
     title: "write a note",
     subtext: "capture your thought",
   },
@@ -74,6 +86,7 @@ class DetailsCard extends HTMLElement {
 
     this.shadowRoot.querySelector("h3").innerText = this.getAttribute("name");
     this.shadowRoot.querySelector("img").src = this.getAttribute("icons");
+    this.shadowRoot.querySelector("card-img").style.backgroundColor = this.getAttribute("background-color");
     this.shadowRoot.querySelector("h2").innerText = this.getAttribute("figure");
     this.shadowRoot.querySelector("p").innerText = this.getAttribute("progressStatus");
   }
@@ -86,8 +99,8 @@ const container = document.getElementById("quickActionsContainer");
 quickActions.forEach(action => {
   container.innerHTML += `
     <div class="action-card">
-    <div class= "card-img">
-    <img src="${action.icon}" />
+    <div class= "card-img" style = "background: ${action.backgroundColor}">
+    <img src="${action.icon}" style = color: ${action.color} />
     </div>
     <div class ="card-text ">
       <h3>${action.title} <span><p>${action.subtext}</p></span></h3>

@@ -1,33 +1,37 @@
-<link rel="stylesheet" href="dashboard.css" />
+<!-- <link rel="stylesheet" href="dashboard.css" /> -->
 <section id="dashboard">
   <div class="dashboard_cards">
     <!-- creating a custom element with js -->
     <dashboard-cards
       name=" active tasks"
       icons="/assets/images/icon/checkbox.svg"
+      background-color="#155DFC"
       figure="0"
       progressStatus="0 completed"
     >
     </dashboard-cards>
     <dashboard-cards
-      name=" active tasks"
-      icons="/assets/images/icon/checkbox.svg"
-      figure="0"
-      progressStatus="0 completed"
+      name=" total expenses"
+      icons="/assets/images/icon/expenses.svg"
+      background-color="#0092B8"
+      figure="$0.00"
+      progressStatus="This period"
     >
     </dashboard-cards>
     <dashboard-cards
-      name=" active tasks"
-      icons="/assets/images/icon/checkbox.svg"
+      name=" total notes"
+      icons="/assets/images/icon/note.svg"
+      background-color="#00A63E"
       figure="0"
-      progressStatus="0 completed"
+      progressStatus="Saved notes"
     >
     </dashboard-cards>
     <dashboard-cards
-      name=" active tasks"
-      icons="/assets/images/icon/checkbox.svg"
-      figure="0"
-      progressStatus="0 completed"
+      name=" completion rate"
+      icons="/assets/images/icon/metric.svg"
+      background-color="#4F39F6"
+      figure="0%"
+      progressStatus="Task completion"
     >
     </dashboard-cards>
   </div>
@@ -39,12 +43,12 @@
         <div class="title_div">
           <div class="titles">
             <img
-              src="/assets/images/icon/arrowleft.svg"
+              src="/assets/images/icon/recent.svg"
               width="20"
               alt="recent-time icon"
             />
-            <p>recent task</p>
           </div>
+          <p>recent task</p>
         </div>
         <div class="empty_recenttask_state">
           <div class="empty_state_content">
@@ -60,12 +64,12 @@
         <div class="title_div">
           <div class="titles">
             <img
-              src="/assets/images/icon/arrowleft.svg"
+              src="/assets/images/icon/metric.svg"
               width="20"
               alt="recent-time icon"
             />
-            <p>quick actions</p>
           </div>
+          <p>quick actions</p>
         </div>
       </div>
     </div>
